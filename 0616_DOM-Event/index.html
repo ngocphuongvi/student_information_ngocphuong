@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student information</title>
+    <style>
+        table,
+        thead,
+        td,
+        tr {
+            border: 1px solid black;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="stuForm"> STUDENT INFORMATION FORM <br>
+        <label for="name">Student Name</label><br>
+        <input type="text" id="name" onchange="getInfo"><br>
+
+        <label for="age">Student Age</label><br>
+        <input type="number" id="age" name="age"><br>
+
+        <label for="major">Major </label><br>
+        <input type="text" id="major" name="major"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="stuTable">
+        <thead>STUDENT INFORMATION
+            <td>Name</td>
+            <td>Age</td>
+            <td>Major</td>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
